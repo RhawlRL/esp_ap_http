@@ -1,0 +1,45 @@
+ESP32 criar uma rede Wi-Fi +HTTP (SoftAP / Access Point/ servidor http)
+- O exemplo cria um AP com SSID e senha, exibe o IP do AP no monitor, aceita conexões e cria uma pagina html com a senha (o DHCP do IDF fornece IPs para os clientes).
+
+
+1) Estrutura do projeto
+-criar uma pasta 
+
+Estrutura dentro da pasta (arquivos)
+esp_ap/ (pasta)
+  ├─ CMakeLists.txt
+  ├─ main/ (pasta)
+  │   ├─ CMakeLists.txt (bloco de notas)
+  │   └─ main.c (usar o vscode para salvar o arquivo em c)
+  └─ sdkconfig (gerado pelo idf.py menuconfig/build)
+
+
+2) Comandos no ESP-IDF PowerShell
+
+- selecionar e criar pasta
+cd %USERPROFILE% ou cd C:\Espressif\frameworks\esp-idf-v5.5\esp_ap_http\ (seleciona a pasta dentro da pasta do C:\Espressif\frameworks\esp-idf-v5.5)
+mkdir esp (cria pasta esp)
+cd esp (seleciona pasta esp)
+mkdir esp_ap_http (cria pasta esp_ap_http dentro da pasta esp)
+cd esp_ap_http (seleciona pasta esp_ap_http)
+
+- seta o target do chip 
+idf.py set-target esp32
+
+-compilar
+idf.py build
+
+-gravar no esp (sempre saber a porta do esp no caso COM3)
+idf.py -p COM3 flash monitor
+
+-Exibição do monitor
+I (xxxx) esp_ap_http: AP iniciado. SSID:MeuESP32_AP password:esp32senha
+I (xxxx) esp_ap_http: AP IP: 192.168.4.1 (DHCP para clientes)
+
+- conect a rede MeuESP32_AP com a senha esp32senha 
+- abra o navegador http://192.168.4.1/
+
+
+- Sair
+Ctrl + ] + ENTER OU Ctrl + c + ENTER
+

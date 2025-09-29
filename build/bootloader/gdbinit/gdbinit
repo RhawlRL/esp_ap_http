@@ -1,0 +1,2 @@
+source C:/Espressif/frameworks/esp-idf-v5.5/esp_ap_http/build/bootloader/gdbinit/symbols
+source C:/Espressif/frameworks/esp-idf-v5.5/esp_ap_http/build/bootloader/gdbinit/connect
