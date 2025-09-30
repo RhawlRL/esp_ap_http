@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp_ap_http",
-    "project_version":    "v5.5",
+    "project_version":    "532d5d0-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.5/esp_ap_http",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5",
     "build_dir":          "C:/Espressif/frameworks/esp-idf-v5.5/esp_ap_http/build",
