@@ -3,6 +3,9 @@ ESP32 criar uma rede Wi-Fi +HTTP (SoftAP / Access Point/ servidor http)
 
 
 1) Estrutura do projeto
+idf.py create-project esp32_usb_msc 
+(esp32_usb_msc é o nome da pasta que quer criar e faz direto a estrutura)
+
 -criar uma pasta 
 
 Estrutura dentro da pasta (arquivos)
